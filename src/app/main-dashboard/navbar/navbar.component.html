@@ -1,0 +1,54 @@
+<nav class="navbar">
+<aside class="main-container">
+    <aside class="left"><img src="../../../assets/Logo.png" alt=""></aside>
+    <aside class="right">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-sharp fa-solid fa-bag-shopping"></i>
+        <!-- menu -->
+        <div id="menu_button">
+            <input type="checkbox" id="menu_checkbox"  (click)="drawer.toggle()">
+            <label for="menu_checkbox" id="menu_label">
+              <div id="menu_text_bar"></div>
+            </label>
+          </div>
+      
+        
+        <!--  -->
+    </aside>
+</aside>
+</nav>
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" position="end" mode="over">
+    <p>Auto-resizing sidenav</p>
+    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+    <button (click)="showFiller = !showFiller" mat-raised-button>
+      Toggle extra text
+    </button>
+  </mat-drawer>
+  <section class="main">
+    <img class="img1" src="../../../assets/6.png" alt="" width="200rem" height="180rem">
+   <section class="left-section">
+<aside class="text-section">
+    <p style="color: #FF9401;font-size:1.7rem ;font-weight: 500;" class="animate__animated animate__backInLeft">___Restaurant</p>
+    <p  style="font-size: 5.2rem;font-weight: 800;letter-spacing: .4rem;">Good F<span><img src="../../../assets/8dGEbVd2O4-removebg-preview 4.png" width="64rem" height="64rem" alt="" class="animate__animated animate__backInLeft"><img src="../../../assets/8dGEbVd2O4-removebg-preview 4.png" width="64rem" height="64rem" alt="" class="animate__animated animate__fadeInRight"></span>d <br>Good Mood</p>
+    <p style="font-size: 1.2rem;width: 27rem;">The food palace is an neighborhood restaurent serving seasonal global cuisine driven by the faire.</p>
+</aside>
+<aside class="button-section">
+    <button class="horizontal">
+        Explore Food Menu
+    </button>
+</aside>
+<ul>
+    <li><a href="#"><i class="fa-brands fa-instagram instagram"></i></a></li>
+    <li><a href="#"><i class="fa-brands fa-whatsapp whatsapp"></i></a></li>
+    <li><a href="#"><i class="fa-brands fa-twitter twitter"></i></a></li>
+</ul>
+    </section>
+    <section class="right-section">
+        <img src="../../../assets/Image (3).png" alt="">
+    </section>
+  </section>
+ 
+</mat-drawer-container>
+
+<app-introduction></app-introduction>
